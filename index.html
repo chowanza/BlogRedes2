@@ -2,9 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Redes II</title>
     <style>
+
+        html { 
+            scroll-behavior: smooth; 
+        }
+
+        p, ul, li, ol,{
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -39,8 +53,10 @@
         .nav-links a {
             color: #1a1a1a;
             text-decoration: none;
-            font-weight: 500;
             transition: color 0.3s;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
         }
 
         .nav-links a:hover {
@@ -60,7 +76,7 @@
         .hero {
             height: 500px;
             background: linear-gradient(rgba(0, 0, 100, 0.7), rgba(0, 0, 100, 0.7)),
-                        url('/api/placeholder/1920/1080') center/cover;
+                        url('img/bg-redes.jpg') center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,12 +86,18 @@
         }
 
         .hero-content h1 {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-bottom: 1rem;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
         }
 
         .hero-content p {
             font-size: 1.2rem;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
         }
 
         /* Blog Section */
@@ -85,19 +107,25 @@
             padding: 0 2rem;
         }
 
-        .blog-section p {
+        .blog-section p , .blog-section ul , .blog-section ol , .blog-section li {
             text-align: justify;
         }
 
         .blog-img {
             width: 500px;
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto;
         }
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 3rem;
             color: white;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
         }
 
         .blog-post {
@@ -203,7 +231,7 @@
             </div>
             <img src="img/logo.png" alt="Logo" class="logo">
             <div class="nav-links">
-                <a href="#">Integrantes</a>
+                <a href="#integrantes">Integrantes</a>
             </div>
         </nav>
     </header>
@@ -236,7 +264,7 @@
             <br> <br>
             <ol>
                 <li>
-                    Recopilación de Requisitos: Prioridades y Objetivos del Cliente.
+                    <b>Recopilación de Requisitos: Prioridades y Objetivos del Cliente.</b>                
                 </li>
                 <br>
                 <p> El primer paso en el diseño de una red de datos es comprender a fondo 
@@ -248,34 +276,35 @@
                 <br>
                     <ul>
                         <li>
-                            Requisitos Funcionales: Definen las capacidades específicas que la red 
+                            <b>Requisitos Funcionales:</b> Definen las capacidades específicas que la red 
                             debe proporcionar, como el soporte para aplicaciones críticas, alta disponibilidad 
                             y velocidad de transmisión de datos.
                         </li>
                         <li>
-                            Requisitos de Rendimiento: Establecen expectativas de eficiencia, 
+                            <b>Requisitos de Rendimiento:</b> Establecen expectativas de eficiencia, 
                             como el ancho de banda, la latencia y los tiempos de respuesta en 
                             función de la cantidad de usuarios.
                         </li>
                         <li>
-                            Requisitos de Seguridad: Identifican los mecanismos de protección 
+                            <b>Requisitos de Seguridad:</b> Identifican los mecanismos de protección 
                             necesarios para salvaguardar la integridad y confidencialidad de los 
                             datos en circulación.
                         </li>
                         <li>
-                            Requisitos de Escalabilidad: Determinan la capacidad de la red para crecer 
+                            <b>Requisitos de Escalabilidad:</b> Determinan la capacidad de la red para crecer 
                             en función de la expansión del negocio y la incorporación de nuevas tecnologías.
                         </li>
                     </ul>
                 <br>
                 <li>
-                    Identificación de Requisitos y Limitaciones Técnicas.
+                    <b>Identificación de Requisitos y Limitaciones Técnicas.</b>
                 </li>
                 <br> 
                     <p> A la par de los requisitos, es fundamental identificar las 
                         limitaciones técnicas del proyecto. Estas limitaciones pueden 
                         provenir de varios factores:
                     </p>
+                    <br>
                     <ul>
                         <li>
                             Presupuesto: Un factor determinante en la elección de equipos, tecnologías y el alcance del proyecto.
@@ -311,7 +340,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team-section">
+    <section class="team-section" id="integrantes">
         <h2 class="section-title">INTEGRANTES</h2>
         <div class="team-grid">
             <div class="team-member">
