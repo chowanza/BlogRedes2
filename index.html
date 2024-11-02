@@ -52,8 +52,8 @@
         }
 
         .logo {
-            width: 60px;
-            height: 60px;
+            width: 100px;
+            height: 90px;
         }
 
         /* Hero Section */
@@ -83,6 +83,14 @@
             max-width: 1200px;
             margin: 4rem auto;
             padding: 0 2rem;
+        }
+
+        .blog-section p {
+            text-align: justify;
+        }
+
+        .blog-img {
+            width: 500px;
         }
 
         .section-title {
@@ -190,10 +198,10 @@
     <header>
         <nav>
             <div class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="#">Blog</a>
+                <a href="#home" class="active">Home</a>
+                <a href="#blog">Blog</a>
             </div>
-            <img src="/api/placeholder/60/60" alt="Logo" class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo">
             <div class="nav-links">
                 <a href="#">Integrantes</a>
             </div>
@@ -201,7 +209,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-content">
             <h1>Blog Redes II</h1>
             <p>Sumérgete en el contenido programático de Redes II</p>
@@ -209,11 +217,96 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="blog-section">
+    <section class="blog-section" id="blog">
         <h2 class="section-title">BLOG</h2>
         <article class="blog-post">
             <h2>Identificación de Requisitos y Limitaciones Técnicas en el Diseño de Redes</h2>
-            <p>El proceso de diseño de una red es un pilar crucial para lograr una infraestructura eficiente y adaptable, capaz de sostener el crecimiento tecnológico de cualquier organización. Al iniciar un proyecto de redes, la identificación de requisitos y limitaciones técnicas permite al equipo diseñar crear una red que no solo responda a las necesidades actuales del cliente, sino que sea escalable, seguro y preparado para adaptarse a futuras demandas.</p>
+            <p> El proceso de diseño de una red es un pilar crucial para lograr una 
+                infraestructura eficiente y adaptable, capaz de sostener el crecimiento 
+                tecnológico de cualquier organización. Al iniciar un proyecto de redes, 
+                la identificación de requisitos y limitaciones técnicas permite al equipo 
+                de diseño crear un sistema que no solo responda a las necesidades actuales 
+                del cliente, sino que sea escalable, seguro y preparado para adaptarse a 
+                futuras demandas. A continuación, exploraremos las fases de recopilación 
+                de requisitos, identificación de limitaciones, y cómo alinear estos elementos 
+                con los objetivos organizacionales.
+            </p>
+            <br>
+            <img src="img/img-blog-1.jpg" alt="img-blog-id-de-requisitos" class="blog-img">
+            <br> <br>
+            <ol>
+                <li>
+                    Recopilación de Requisitos: Prioridades y Objetivos del Cliente.
+                </li>
+                <br>
+                <p> El primer paso en el diseño de una red de datos es comprender a fondo 
+                    las necesidades del cliente. Esto implica trabajar en estrecha colaboración 
+                    para determinar sus prioridades, objetivos a corto y largo plazo, así como el 
+                    rol que desempeñará la red en sus operaciones. Los requisitos pueden clasificarse 
+                    en varios tipos:
+                </p>
+                <br>
+                    <ul>
+                        <li>
+                            Requisitos Funcionales: Definen las capacidades específicas que la red 
+                            debe proporcionar, como el soporte para aplicaciones críticas, alta disponibilidad 
+                            y velocidad de transmisión de datos.
+                        </li>
+                        <li>
+                            Requisitos de Rendimiento: Establecen expectativas de eficiencia, 
+                            como el ancho de banda, la latencia y los tiempos de respuesta en 
+                            función de la cantidad de usuarios.
+                        </li>
+                        <li>
+                            Requisitos de Seguridad: Identifican los mecanismos de protección 
+                            necesarios para salvaguardar la integridad y confidencialidad de los 
+                            datos en circulación.
+                        </li>
+                        <li>
+                            Requisitos de Escalabilidad: Determinan la capacidad de la red para crecer 
+                            en función de la expansión del negocio y la incorporación de nuevas tecnologías.
+                        </li>
+                    </ul>
+                <br>
+                <li>
+                    Identificación de Requisitos y Limitaciones Técnicas.
+                </li>
+                <br> 
+                    <p> A la par de los requisitos, es fundamental identificar las 
+                        limitaciones técnicas del proyecto. Estas limitaciones pueden 
+                        provenir de varios factores:
+                    </p>
+                    <ul>
+                        <li>
+                            Presupuesto: Un factor determinante en la elección de equipos, tecnologías y el alcance del proyecto.
+                        </li>
+                        <li>
+                            Infraestructura Existente: Evaluar la infraestructura actual permite decidir si es posible realizar mejoras o si es necesario implementar una nueva arquitectura.
+                        </li>
+                        <li>
+                            Capacidades Técnicas del Personal: El nivel de experiencia del equipo que mantendrá la red afecta las decisiones sobre la complejidad de la arquitectura de red.
+                        </li>
+                        <li>
+                            Restricciones Físicas y de Espacio: Factores como el espacio disponible para los servidores, racks o equipo de comunicaciones en las instalaciones de la organización.
+                        </li>
+                    </ul>
+            </ol>
+            <br>
+            <h3>Alineación de Requisitos con Objetivos Organizacionales.</h3>
+            <p>Para que una red de datos sea verdaderamente útil, su diseño debe estar alineado con la misión, visión y objetivos estratégicos de la organización. Este enfoque no solo asegura que la red cumpla con las expectativas del cliente, sino que fortalece su capacidad para responder a cambios futuros.Al diseñar una red pensando en la escalabilidad y crecimiento tecnológico, los equipos de IT deben proyectar las necesidades de conectividad y seguridad a largo plazo. Esto incluye prever actualizaciones en protocolos de comunicación, inversiones en hardware compatible con nuevas aplicaciones y políticas de ciberseguridad.</p>
+            <br>
+            <h3>CONCLUSIÓN.</h3>
+            <p>El proceso de identificación de requisitos y limitaciones técnicas no es solo una fase preliminar, sino una estrategia continua para garantizar que la red de datos se mantenga en sintonía con los objetivos organizacionales. A través de la colaboración entre el cliente y el equipo de diseño, se logran redes robustas, seguras y preparadas para soportar el crecimiento tecnológico, lo que representa una ventaja competitiva en el mundo digital actual.</p>
+            <br>
+            <h3>REFERENCIAS BIBLIOGRÁFICAS.</h3>
+            <ul>
+                <li>Cisco Systems, Inc. (2019). Cisco Networking Academy Program: Designing and Supporting Computer Networks. Pearson Education.</li>
+                <li>Doyle, J. (2003). Routing TCP/IP, Volume I (2nd ed.). Cisco Press.</li>
+                <li>Forouzan, B. A. (2006). Data Communications and Networking (4th ed.). McGraw-Hill.</li>
+                <li>Kurose, J., & Ross, K. (2017). Computer Networking: A Top-Down Approach (7th ed.). Pearson Education.</li>
+                <li>Oppenheimer, P. (2011). Top-Down Network Design (3rd ed.). Cisco Press.</li>
+                <li>Tanenbaum, A. S., & Wetherall, D. J. (2013). Computer Networks (5th ed.). Pearson Education.</li>
+            </ul>
         </article>
     </section>
 
@@ -222,26 +315,19 @@
         <h2 class="section-title">INTEGRANTES</h2>
         <div class="team-grid">
             <div class="team-member">
-                <img src="/api/placeholder/200/200" alt="Carlos Martínez">
+                <img src="img/adrian.png" alt="Carlos Martínez">
                 <h3>Carlos Martínez</h3>
                 <p>Estudiante de Ingeniería Informática</p>
                 <p>V-28.375.833</p>
             </div>
             <div class="team-member">
-                <img src="/api/placeholder/200/200" alt="Luis J Candiales F">
+                <img src="img/FotoBlog.jpg" alt="Luis J Candiales F">
                 <h3>Luis J Candiales F</h3>
                 <p>Estudiante de Ingeniería Informática</p>
                 <p>V-28.671.144</p>
-                <div class="social-links">
-                    <a href="#" title="Email">📧</a>
-                    <a href="#" title="Twitter">🐦</a>
-                    <a href="#" title="LinkedIn">💼</a>
-                    <a href="#" title="Instagram">📸</a>
-                    <a href="#" title="WhatsApp">📱</a>
-                </div>
             </div>
             <div class="team-member">
-                <img src="/api/placeholder/200/200" alt="Gabriel Gil">
+                <img src="img/gromu.jpg" alt="Gabriel Gil">
                 <h3>Gabriel Gil</h3>
                 <p>Estudiante de Ingeniería Informática</p>
                 <p>V-26.770.064</p>
@@ -252,7 +338,7 @@
     <!-- Footer -->
     <footer>
         <p>BLOG REDES 2 UGMA</p>
-        <p>Copyright © 2024 All rights reserved</p>
+        <p>Copyright © 2024 Todos los Derechos Reservados</p>
     </footer>
 
     <script>
